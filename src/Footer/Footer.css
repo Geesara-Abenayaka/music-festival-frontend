@@ -1,0 +1,185 @@
+.title {
+    color: white;
+    font-size: 20px;
+    padding-top: 45px;
+    padding-bottom: 50px;
+    margin-bottom: -10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: black;
+    margin-bottom: 10px;
+  
+    display: flex;
+    gap: 123px;
+    justify-content: space-between; 
+  align-items: center;
+
+}
+
+.skyveillogo {
+    height: 40px;
+    width: 110px;
+    margin-bottom:-10px;
+    
+}
+
+.wantthis {
+    font-size: 30px;
+    font-family: 'baumans';
+    color: grey;
+
+    margin-top: -50px;
+
+
+}
+
+.geesara {
+    color: rgb(171, 171, 171);
+    font-size: 15px;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+.wannastyle {
+    color: rgb(217, 217, 217);
+    font-size: 15px;
+}
+
+.subscribe {
+    margin-top: 50px;
+    color: rgb(255, 255, 255);
+
+}
+
+.inputbox {
+    margin-top: 12px;
+    height: 30px;
+    width: 250px;
+    padding: 3px 10px;
+    font-size: 16px;
+    border-radius: 2px;
+    border: none;
+    background-color: rgb(141, 141, 141);
+    color: white;
+    outline: none;
+}
+
+.inputbox::placeholder {
+    color: white;
+    opacity: 0.8;
+}
+
+.inputbox:focus {
+    border-color: #8800ff;
+    box-shadow: 0 0 20px rgba(145, 19, 255, 0.8);
+}
+
+.submitbutton {
+    background-color: rgb(44, 44, 44);
+    height: 37px;
+    border: none;
+    color: rgb(193, 193, 193);
+    width: 70px;
+    border-radius: 5px;
+    margin-left: 10px;
+    
+    font-weight: bold;
+    transition: background-color 0.3s ease 0.2s;
+}
+
+.submitbutton:hover {
+    background-color: #8800ff;
+}
+
+.abe {
+    display: flex;
+}
+
+.jan {
+    margin-top: 11.5px;
+
+}
+
+.reacticon1 {
+    margin-top: 20px;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    transition: background-color 0.3s ease 0.2s;
+
+}
+
+.reacticon1:hover {
+    color: #8800ff;
+}
+
+@media (min-width: 700px) and (max-width: 1200px) {
+    .wantthis {
+        font-size: 20px;
+         margin-left: -20px;
+        
+        
+    }
+
+    .skyveillogo {
+        width: 60px;
+        height: 20px;
+        margin-bottom: -5px;
+    }
+
+    .geesara {
+        font-size: 12px;
+    }
+
+    .title {
+        gap: 20px;
+        
+
+    }
+
+    .wannastyle {
+        font-size: 10px;
+    }
+
+    .subscribe {
+        font-size: 12px;
+    }
+
+    .inputbox {
+        margin-top: 8px;
+        height: 21px;
+        width: 100px;
+        padding: 1px 10px;
+        font-size: 10px;
+        border-radius: 2px;
+        border: none;
+        background-color: rgb(141, 141, 141);
+        color: white;
+        outline: none;
+    }
+    .submitbutton {
+    background-color: rgb(44, 44, 44);
+    height: 25px;
+    border: none;
+    color: white;
+    width: 47px;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-size: 10px;
+    margin-top:-10px;
+    
+    font-weight: bold;
+    transition: background-color 0.3s ease 0.2s;
+}
+    .reacticon1{
+        height:20px;
+        width:20px;
+    }
+   
+    
+
+}
+
+@media (min-width: 800px) and (max-width: 1400px) {}

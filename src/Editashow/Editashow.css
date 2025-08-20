@@ -1,0 +1,73 @@
+.editashow{
+    color: white;
+    font-family: baumans;
+    margin-left: 35px;
+    margin-top: 50px;
+    font-size: 25px;
+}
+.edit-input {
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(8px);            
+    -webkit-backdrop-filter: blur(8px);    
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    color: #fff; 
+    outline: none;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.wannashowasflex{
+    display: flex;
+    margin-left: 20px;
+}
+.savechanges{
+    float: right;
+    margin-top: -25px;
+    margin-left: -120px;
+    margin-right: 40px;
+    height:30px;
+    width:120px;
+    font-family:baumans;
+    color:white;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    border:none;
+}
+.savechanges:hover{
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+}
+.card-scroll-container{
+    width:1000px;
+    margin-left: 20px;
+    display: flex;
+    overflow-x: auto; 
+     gap: 16px; 
+      scroll-behavior: smooth;   
+        padding-bottom: 20px;
+
+}
+.card-scroll-container::-webkit-scrollbar {
+
+    padding-top: 20px;
+  height: 8px; 
+}
+
+.card-scroll-container::-webkit-scrollbar-thumb {
+    
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 4px;
+}
+
+.card-scroll-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+.editashow-title{
+  color:white;
+  font-family: baumans;
+  margin-left: 30px;
+  margin-top: 20px;
+  font-size: 20px;
+}

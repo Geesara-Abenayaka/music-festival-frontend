@@ -1,0 +1,73 @@
+.reviewtext {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: white;
+    text-align: center;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 18px;
+    padding-bottom: 20px;
+}
+
+.godown {
+    padding-top: 45px;
+}
+
+.reviewtext {
+    margin-top: 8px;
+ 
+    font-family: 'baumans';
+    left: 0;
+  
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(10px);
+
+}
+.wannaalignleft{
+    text-align: left;
+   
+    font-size: 50px;
+    margin-bottom: -20px;
+}
+
+.nospace {
+
+    background-image: url('../assets/aaa.jpg');
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    background-position: center -550px;
+    margin-right: 2px;
+    margin-bottom: 9px;
+     
+}
+
+
+@media (min-width: 600px) and (max-width: 1400px) {
+   .reviewtext {
+        font-size: 10px;
+        padding-left: 35px;
+        padding-right: 35px;
+        
+    }
+    .nospace{
+
+        background-size: auto; 
+           background-position: center -830px;
+    }
+}
+@media(max-width:600px){
+    .reviewtext{
+        font-size: 8px;
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+     .nospace{
+ 
+      
+        background-position: center -70px;
+    }
+}
+
+

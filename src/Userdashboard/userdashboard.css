@@ -1,0 +1,205 @@
+.menu {
+  padding: 10px;
+  color: white;
+
+}
+
+.menubutton {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.menuhandler {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 180px;
+  background-color: black;
+  border-radius: 0 30px 50px 0;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);  
+  backdrop-filter: blur(10px);           
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.menuhandler.open {
+  transform: translateX(0);
+}
+
+.menuitem {
+  padding-top: 10px;
+  color: rgb(180, 180, 180);
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+
+.menuitems {
+  margin-right: 20px;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.menuitems:hover {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: #fff;
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(106, 17, 203, 0.5);
+}
+
+.closebtn {
+  float: right;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: -60px;
+}
+
+
+.slide-container {
+  transition: margin-left 0.3s ease-in-out;
+  margin-left: 0;
+  padding: 20px;
+    /* background-image: url('../assets/logoskyveil.jpg');  */
+}
+
+.slide-container.shifted {
+  margin-left: 250px; 
+}
+.wannagodown{
+  margin-top: 40px;
+  position: absolute;
+
+   background-color: rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(10px);   
+  -webkit-backdrop-filter: blur(10px); 
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 20px;
+  margin-left: 50px;
+
+}
+
+.wannagodown1{
+  margin-top: 40px;
+  position: fixed;
+   background-color: rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(10px);  
+  -webkit-backdrop-filter: blur(10px); 
+  padding-top: 40px;
+  padding-bottom: 80px;
+  border-radius: 20px;
+margin-left: 200px;
+
+
+}
+
+
+.wannagodown2{
+  margin-top: -18px;
+  position: fixed;
+   background-color: rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(10px);   
+  -webkit-backdrop-filter: blur(10px); 
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 20px;
+  margin-right: 20px;
+  margin-left: 100px;
+}
+.wannagodown2.shifted {
+  margin-top: 60px; 
+}
+.wannadownmyshow{
+  margin-top: 50px;
+}
+.skyveil-content {
+ 
+  text-align: center;
+  margin-left: 150px;
+  margin-top: -80px;
+  transition: margin-left 0.3s ease-in-out;
+
+}
+
+.skyveil-content.shifted {
+  margin-left: 30px;
+  padding-top: 45px;
+
+
+}
+
+
+.wannaknow{
+  color: white;
+  text-align: left;
+  margin-left: 10px;
+}
+.kygopic{
+  width:300px;
+  height:190px;
+  /* margin-left: -275px; */
+  border-radius: 10px;
+}
+.dfg{
+  display: flex;
+  margin-bottom: 40px;
+}
+.kygointro{
+  color:white;
+  display: inline-block;
+  width:250px;
+  text-align: left;
+  padding-left: 10px;
+  margin-top: 0px;
+  margin-right: 60px;
+  font-family: baumans;
+}
+
+
+.welcomediv{
+  margin-right: 20px;
+  margin-left: -100px;
+}
+
+.background-video1 {
+    position: fixed;   
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+    z-index: -1;        
+}
+
+
+.wannagodown6{
+  /* position: fixed; */
+  left:300px;
+      margin-top:50px ;
+     
+  position: fixed;
+   background-color: rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(10px);   
+  -webkit-backdrop-filter: blur(10px); 
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 20px;
+  margin-right: 750px;
+  margin-left: 100px;
+    transition: margin-left 0.3s ease; 
+  
+}
+
+.wannagodown6.latha {
+  /* position: fixed; */
+  margin-left: 250px; 
+  transition: margin-left 0.3s ease;
+}

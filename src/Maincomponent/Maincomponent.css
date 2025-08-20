@@ -1,0 +1,145 @@
+
+.jkl{
+    padding-top: 750px;
+    text-align: center;
+    font-family: "Baumans";
+      font-size: 32px;
+      color:white;
+}
+.wannaaligncenter{
+   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.wannablur{
+     background-color: rgba(0, 0, 0, 0.2); 
+  backdrop-filter: blur(5px);        
+  -webkit-backdrop-filter: blur(5px);
+}
+.stylemain{
+   
+     background-size:contain;
+     background-position: center 909px;
+     background-repeat: no-repeat;
+}
+.dropdown {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+  position: relative;
+  display: inline-block;
+  padding-right: 30px;
+}
+
+.dropbtn{
+    background-color: #000000;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border:none;
+}
+
+.dropdowncontent{
+    display: none;
+    position:absolute;
+    background-color: #000000;
+    min-width:160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index:1;
+}
+.b1{
+    margin-right: 30px;
+    color: white;
+}
+.n1{
+  color: white;
+}
+.backbutton{
+    
+    margin-top: -18px;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;     
+  font-weight: bold;   
+  color: grey;  
+}
+.b1:hover,
+.n1:hover {
+  cursor: default;
+}
+
+
+.dropdowncontent a{
+    color:rgb(255, 255, 255);
+    padding:12px 16px;
+    text-decoration: none;
+    display:block;
+}
+.dropdowncontent a:hover {background-color: #ddd;
+color: black;}
+.dropdown:hover .dropdowncontent {display: block;}
+.dropdown:hover .dropbtn {background: linear-gradient(
+    135deg, 
+    rgba(255, 34, 255, 0.9),   
+    rgba(55, 55, 227, 0.9)      
+  );}
+
+@media (min-width: 400px) and (max-width: 1400px) {
+    .jkl{
+        font-size: 20px;
+        padding-top: 630px; 
+    }
+    .dropbtn{
+   margin-top: 20px;
+    padding: 12px;
+    font-size: 12px;
+    }
+    .dropdown{
+        font-size: 12px;
+    }
+    .b1{
+        font-size: 30px;
+    }
+    .n1{
+        font-size: 30px;;
+    }
+    .stylemain{
+
+     background-position: center 900px;
+  
+}
+    
+}
+
+.background-video4 {
+    position: fixed;   
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+    z-index: -1;        
+}
+
+
+
+.showall-btn {
+    background-color: #000000;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px; 
+    transition: background-color 0.3s ease;
+}
+
+.showall-btn:hover {
+   background: linear-gradient(
+    135deg, 
+    rgba(255, 34, 255, 0.9),   
+    rgba(55, 55, 227, 0.9)     
+  ); 
+    color: white;
+}

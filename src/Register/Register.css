@@ -1,0 +1,318 @@
+.country{
+    padding-left: 65px;
+    color:white;
+}
+.countrybox {
+    margin-top: 20px;
+ 
+    margin-left: 85px;
+  width: 42.5%;
+  padding: 5px 16px;
+  font-size: 18px;
+  border-radius: 4px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: rgb(156, 156, 156);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  outline: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='32' viewBox='0 0 24 24' width='32' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 24px;
+}
+.countrybox option {
+   background-color: rgba(0, 0, 0, 0.7); 
+  color: white;                          
+  border: none;
+  
+}
+
+.countrybox:focus {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+
+
+.gender {
+    margin-top: 20px;
+ 
+    margin-left: 95px;
+  width: 42.5%;
+  padding: 5px 16px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: rgb(156, 156, 156);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  outline: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='32' viewBox='0 0 24 24' width='32' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 24px;
+}
+.gender option {
+ background-color: rgba(0, 0, 0, 0.7); 
+  color: white;                         
+  border: none;
+}
+
+.gender:focus {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+
+
+
+.language {
+    margin-top: 20px;
+ 
+    margin-left: 75px;
+  width: 42.5%;
+  padding: 5px 16px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: rgb(156, 156, 156);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  outline: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='32' viewBox='0 0 24 24' width='32' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 24px;
+}
+.language option {
+  background-color: rgba(0, 0, 0, 0.7); 
+  color: white;                         
+  border: none;
+}
+
+.language:focus {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+
+
+
+.image-upload{
+   
+    color: white;
+    margin-left: 65px;
+    
+}
+.custom-file-upload {
+    margin-top: 20px;
+    margin-left: 22px;
+    width:40.5%;
+  display: inline-block;
+  padding: 5px ;
+  text-align: center;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  color: white;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.2s ease;
+}
+
+.custom-file-upload:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.image-upload input[type="file"] {
+     display: none;
+  
+      
+}
+.image-preview {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.image-preview img {
+  margin-left: 60px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+}
+
+
+
+
+.registerdiv{
+   
+    height:100%;
+    width:50%;
+   position: absolute; 
+    top:0%;
+    right:0%;
+     background-color: rgba(0,0,0,0.3); 
+  backdrop-filter: blur(8px); 
+  -webkit-backdrop-filter: blur(8px);
+    border-radius: 100px 0px 0px 100px;
+}
+.login-container {
+  height: 100.0vh;  
+  width: 98.9vw;  
+  background-image: url('../assets/logoskyveil.jpg'); 
+   /* background: linear-gradient(135deg, #9924ff, #0d00ff); */
+  background-size: cover;
+  background-position: 50% center;
+  
+
+
+}
+.registertext{
+    margin-top: 140px;
+    text-align: center;
+    font-family: baumans;
+    font-size: 30px;
+    top:30%;
+    color: white;
+}
+.NIC{
+    display: block;
+    padding-top: 20px;
+    margin-left: 10%;
+    color:white;
+}
+
+
+.NIC input {
+  color: white;
+  width: 42%;
+  margin-left: 135px; 
+  font-size: 17px;
+  padding: 5px 16px;
+  border:none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  outline:none;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 0 8ps  rgba(0, 0, 0, 0.3);
+}
+.NIC input::placeholder{
+      color: #a0a0a0;
+
+}
+.NIC input:focus {
+   
+
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+.aligncenter {
+
+  margin-left: 100px;
+}
+
+
+
+input:-webkit-autofill {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  -webkit-box-shadow: 0 0 0 30px rgba(0, 0, 0, 0.4) inset !important;
+  -webkit-text-fill-color: white !important;
+  transition: background-color 5000s ease-in-out 0s; 
+}
+
+input:-webkit-autofill:focus {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  -webkit-box-shadow: 0 0 0 30px rgba(0, 0, 0, 0.6) inset !important;
+  -webkit-text-fill-color: white !important;
+}
+
+
+
+
+.accountcheck{
+    margin-left:67px;
+    color:white;
+}
+
+.nextbtn{
+    margin-top: 20px;
+    position: relative;
+    font-family: baumans;
+    padding: 8px;
+    width:70px;
+    border-radius: 5px;
+    border:none;
+    background-color: rgb(72, 72, 72);
+    color: white;
+    font-weight: 200;
+    transition: background-color 0.3s ease 0.2s;
+    margin-left: 440px;
+}
+.nextbtn:hover{
+    background-color: #691ad0;
+}
+
+
+
+.fullname{
+    display: block;
+    padding-top: 60px;
+    margin-left: 10%;
+    color:white;
+}
+
+
+.fullname input {
+  color: white;
+  margin-left: 75px; 
+  font-size: 17px;
+  width:41.5%;
+  padding: 5px 16px;
+  border:none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  outline:none;
+  background-color: rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 0 8ps  rgba(0, 0, 0, 0.3);
+}
+.fullname input::placeholder{
+      color: #a0a0a0;
+
+}
+.fullname input:focus {
+
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}

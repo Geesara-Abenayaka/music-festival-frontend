@@ -1,0 +1,220 @@
+.artistnamelabel {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+}
+
+.artistnamelabel input {
+    width: 615px;
+    border: none;
+    margin-top: 40px;
+    margin-left: 145px;
+    height: 32px;
+    border-radius: 6px;
+    padding-left: 15px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    
+    backdrop-filter: blur(4px);
+   
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.artistnamelabel input::placeholder {
+    color: white;
+    font-size: 15px;
+   
+}
+.artistnamelabel input:focus {
+  border: none;         
+  outline: none;        
+}
+
+
+
+.country2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+}
+
+.countrybox2 {
+    margin-top: 20px;
+
+    margin-left: 85px;
+    width: 630px;
+    padding: 5px 16px;
+    font-size: 18px;
+    border-radius: 4px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: rgb(60, 60, 60);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    outline: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='32' viewBox='0 0 24 24' width='32' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 24px;
+}
+
+.countrybox2 option {
+    background-color: rgba(0, 0, 0, 0.7);
+  
+    color: white;
+  
+    border: none;
+
+}
+
+.countrybox2:focus {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+
+
+.gender2 {
+    margin-top: 20px;
+
+    margin-left: 71px;
+    width: 630px;
+    padding: 5px 16px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color:rgb(60, 60, 60);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    outline: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='32' viewBox='0 0 24 24' width='32' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 24px;
+}
+
+.gender2 option {
+    background-color: rgba(0, 0, 0, 0.7);
+ 
+    color: white;
+
+    border: none;
+}
+
+.gender2:focus {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+
+
+
+.language2 {
+    margin-top: 20px;
+
+    margin-left: 82px;
+    width: 630px;
+    padding: 5px 16px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: rgb(60, 60, 60);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    outline: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='32' viewBox='0 0 24 24' width='32' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 24px;
+}
+
+.language2 option {
+    background-color: rgba(0, 0, 0, 0.7);
+  
+    color: white;
+  
+    border: none;
+}
+
+.language2:focus {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+
+.image-upload1{
+   
+    color: white;
+   
+    
+}
+.custom-file-upload1 {
+    margin-top: 20px;
+    margin-left: 14px;
+    width:40.5%;
+  display: inline-block;
+  padding: 5px ;
+  text-align: center;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  color: white;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.2s ease;
+}
+
+.custom-file-upload1:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.image-upload1 input[type="file"] {
+     display: none;
+  
+      
+}
+.image-preview1 {
+  margin-top: 15px;
+  text-align: center;
+  margin-left: -70px;
+}
+
+
+.savechangesbtn1 {
+    height: 40px;
+    width: 140px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-family: baumans;
+    transition: 0.3s ease-in-out;
+    margin-left: 735px;
+    margin-top: 30px;
+}
+
+.savechangesbtn1:hover {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+}

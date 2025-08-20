@@ -1,0 +1,67 @@
+.wannagodown4{
+
+
+  position: fixed;
+   background-color: rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(10px);  
+  -webkit-backdrop-filter: blur(10px); 
+  margin-top: -50px;
+    margin-left: 100px;
+    border-radius: 10px;
+
+
+}
+.wannagodown5{
+
+
+  position: fixed;
+   background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);   
+  -webkit-backdrop-filter: blur(10px); 
+  margin-top: 10px;
+    margin-left: 100px;
+    border-radius: 10px;
+  padding-bottom: 50px;
+    margin-right: 60px;
+
+
+}
+
+.loweena{
+  margin-top:20px;
+  margin-left: -20px;
+  margin-right: 60px;
+}
+
+.geesara{
+  margin-top:70px;
+}
+.abenayaka{
+  margin-left: 120px;
+}
+
+
+.wannagodown6{
+
+  left:300px;
+      margin-top:50px ;
+     
+  position: fixed;
+   background-color: rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(10px);   
+  -webkit-backdrop-filter: blur(10px); 
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 20px;
+  margin-right: 750px;
+  margin-left: 100px;
+    transition: margin-left 0.3s ease; 
+  
+}
+
+.wannagodown6.latha {
+
+  margin-left: 250px; 
+  transition: margin-left 0.3s ease; 
+  margin-top: 100px;
+}
