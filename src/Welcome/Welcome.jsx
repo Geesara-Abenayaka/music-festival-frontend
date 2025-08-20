@@ -3,6 +3,7 @@ import axios from 'axios';
 
 
 import './Welcome.css'
+import { BACKEND_BASE } from '../config';
 
 function Welcome() {
 
@@ -33,7 +34,7 @@ function Welcome() {
                   }
   
                   const response = await axios.get(
-                      `http://localhost:5000/users/${userIdFromStorage}`,
+                      `${BACKEND_BASE}users/${userIdFromStorage}`,
                       {
                           headers: { "Content-Type": "application/json" }
                       }

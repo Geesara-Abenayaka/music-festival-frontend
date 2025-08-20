@@ -5,6 +5,7 @@ import backgroundvideo from '../assets/backgroundvideo.webm';
 import { MdArrowBackIos } from "react-icons/md";
 import { MdArrowForwardIos } from "react-icons/md";
 import axios from "axios";
+import { BACKEND_BASE } from '../config';
 
 function Maincomponent() {
   const videoRef = useRef(null);
@@ -22,7 +23,7 @@ function Maincomponent() {
   useEffect(() => {
     const fetchShows = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/shows");
+        const res = await axios.get(`${BACKEND_BASE}api/shows`);
         const allShows = res.data.shows || [];
         setShows(allShows);
         setFilteredShows(allShows);
@@ -94,7 +95,7 @@ function Maincomponent() {
 
           <div className='wannaaligncenter'>
             {filteredShows.map((show, index) => {
-              const imageUrl = `http://localhost:5000${show.imageUrl}`;
+              const imageUrl = `${BACKEND_BASE}${show.imageUrl.slice(1) }`;
               return (
                 <AAA
                   key={index}

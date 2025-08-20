@@ -8,6 +8,7 @@ import Changepassword from '../Changepassword/Changepassword';
 import './Userdashboard.css';
 import { IoMdMenu } from "react-icons/io";
 import backgroundvideo from '../assets/backgroundvideo.webm';
+import { BACKEND_BASE } from '../config';
 
 function Userdashboard() {
   const navigate = useNavigate();
@@ -59,7 +60,7 @@ function Userdashboard() {
     if (!confirmDelete) return;
 
     try {
-      await fetch(`http://localhost:5000/users/${userId}`, {
+      await fetch(`${BACKEND_BASE}users/${userId}`, {
         method: 'DELETE',
       });
 

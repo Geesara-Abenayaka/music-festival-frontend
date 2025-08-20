@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import axios from "axios";
 import './Register.css'
+import { BACKEND_BASE } from '../config';
 
 function Register() {
     const location = useLocation();
@@ -51,7 +52,7 @@ function Register() {
     }
     const sendRequest = async () => {
         try {
-            await axios.put(`http://localhost:5000/users/${userId}`, inputs, {
+            await axios.put(`${BACKEND_BASE}users/${userId}`, inputs, {
                 headers: { "Content-Type": "application/json" }
             });
         } catch (err) {

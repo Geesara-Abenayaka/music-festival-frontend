@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { IoMdCloseCircle } from "react-icons/io";
 import './Cart.css';
 import axios from 'axios';
+import { BACKEND_BASE } from '../config';
 
 function Cart() {
   const [cartItems, setCartItems] = useState([]);
@@ -46,7 +47,7 @@ function Cart() {
 
     try {
      
-      await axios.post("http://localhost:5000/users/checkout", {
+      await axios.post(`${BACKEND_BASE}users/checkout`, {
         userId,
         cartItems
       });

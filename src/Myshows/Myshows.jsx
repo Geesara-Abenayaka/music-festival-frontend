@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Myshows.css';
 import axios from 'axios';
+import { BACKEND_BASE } from '../config';
 
 function Myshows() {
   const [boughtShows, setBoughtShows] = useState([]);
@@ -11,7 +12,7 @@ function Myshows() {
       if (!userId) return; 
 
       try {
-        const res = await axios.get(`http://localhost:5000/users/${userId}`);
+        const res = await axios.get(`${BACKEND_BASE}users/${userId}`);
         if (res.data.user && res.data.user.boughtShows) {
           setBoughtShows(res.data.user.boughtShows);
         }

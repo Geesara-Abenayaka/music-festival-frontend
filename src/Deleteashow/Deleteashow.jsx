@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Deleteashow.css';
 import axios from 'axios';
+import { BACKEND_BASE } from '../config';
 
 function Deleteashow() {
   const [shows, setShows] = useState([]);
@@ -8,7 +9,7 @@ function Deleteashow() {
   useEffect(() => {
     const fetchShows = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/shows');
+        const res = await axios.get(`${BACKEND_BASE}api/shows`);
         if (res.data.success) {
           setShows(res.data.shows);
         } else {
@@ -25,7 +26,7 @@ function Deleteashow() {
     if (!window.confirm("Are you sure you want to delete this show?")) return;
 
     try {
-      const res = await axios.delete(`http://localhost:5000/api/shows/${id}`);
+      const res = await axios.delete(`${BACKEND_BASE}api/shows/${id}`);
       if (res.data.success) {
         setShows(prevShows => prevShows.filter(show => show._id !== id));
       } else {
@@ -47,7 +48,7 @@ function Deleteashow() {
           <div className='thisishowitworks' key={show._id}>
             <div className='show-left'>
               <img
-                src={`http://localhost:5000${show.imageUrl}`}
+                src={`${BACKEND_BASE}${show.imageUrl.slice(1)}`}
                 alt={show.artistName}
                 className='aviciiimg'
               />

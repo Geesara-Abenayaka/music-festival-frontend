@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './Changepassword.css';
+import { BACKEND_BASE } from '../config';
 
 function Changepassword() {
   const [oldPassword, setOldPassword] = useState("");
@@ -27,7 +28,7 @@ function Changepassword() {
       }
 
       const response = await axios.put(
-        `http://localhost:5000/users/${userId}`,
+        `${BACKEND_BASE}users/${userId}`,
         { oldPassword, password: newPassword },
         { headers: { "Content-Type": "application/json" } }
       );

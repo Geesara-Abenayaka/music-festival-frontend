@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Editashow.css';
 import axios from 'axios';
+import { BACKEND_BASE } from '../config';
 
 function Editashow() {
   const [cards, setCards] = useState([]);
@@ -9,7 +10,7 @@ function Editashow() {
   useEffect(() => {
     const fetchShows = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/shows");
+        const res = await axios.get(`${BACKEND_BASE}api/shows`);
         const showsWithImages = res.data.shows.map(show => ({
           id: show._id,
           artistName: show.artistName,
@@ -18,7 +19,7 @@ function Editashow() {
           price: show.price,
           imageUrl: show.imageUrl.startsWith('http') 
                     ? show.imageUrl 
-                    : `http://localhost:5000${show.imageUrl}`,
+                    : `${BACKEND_BASE}${show.imageUrl.slice(1)}`,
           newImageFile: null, 
         }));
         setCards(showsWithImages);
@@ -59,7 +60,7 @@ function Editashow() {
           formData.append('image', show.newImageFile);
         }
 
-        await axios.put(`http://localhost:5000/api/shows/${show.id}`, formData, {
+        await axios.put(`${BACKEND_BASE}api/shows/${show.id}`, formData, {
           headers: { 'Content-Type': 'multipart/form-data' }
         });
       }

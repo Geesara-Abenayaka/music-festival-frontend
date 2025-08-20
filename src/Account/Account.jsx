@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Account.css';
 import Profilepic from '../assets/profilepic.jpg';
 import axios from 'axios';
+import { BACKEND_BASE } from '../config';
 
 function Account() {
     const [userId, setUserId] = useState("");
@@ -29,7 +30,7 @@ function Account() {
                 }
 
                 const response = await axios.get(
-                    `http://localhost:5000/users/${userIdFromStorage}`,
+                    `${BACKEND_BASE}users/${userIdFromStorage}`,
                     {
                         headers: { "Content-Type": "application/json" }
                     }
@@ -66,7 +67,7 @@ function Account() {
 
     const handleSave = async () => {
         try {
-            const response = await axios.put(`http://localhost:5000/users/${userId}`, inputs, {
+            const response = await axios.put(`${BACKEND_BASE}users/${userId}`, inputs, {
                 headers: { "Content-Type": "application/json" }
             });
 

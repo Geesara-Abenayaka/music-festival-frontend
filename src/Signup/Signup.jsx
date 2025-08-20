@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Signup.css';
 import { useNavigate } from "react-router-dom";
 import axios from 'axios';
+import { BACKEND_BASE } from '../config';
 
 function Signup() {
   const [showPassword, setShowPassword] = useState(false);
@@ -31,7 +32,7 @@ function Signup() {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/users");
+        const res = await axios.get(`${BACKEND_BASE}users`);
         setAllUsers(res.data.users || []);
       } catch (err) {
         console.error("Failed to fetch users:", err);
@@ -90,7 +91,7 @@ function Signup() {
 
     try {
       setSubmitting(true);
-      const res = await axios.post("http://localhost:5000/users", payload);
+      const res = await axios.post(`${BACKEND_BASE}users`, payload);
       navigate('/register', { state: { userId: res.data.user._id } });
     } catch (err) {
       

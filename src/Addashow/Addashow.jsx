@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Addashow.css';
 import axios from 'axios';
+import { BACKEND_BASE } from '../config';
 
 function Addashow() {
     const [artistName, setArtistName] = useState('');
@@ -34,7 +35,7 @@ function Addashow() {
             formData.append('image', image); 
 
             const res = await axios.post(
-                'http://localhost:5000/api/shows', 
+                `${BACKEND_BASE}api/shows`, 
                 formData,
                 { headers: { 'Content-Type': 'multipart/form-data' } }
             );

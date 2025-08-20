@@ -3,6 +3,7 @@ import './Loginpage.css';
 import { useNavigate } from "react-router-dom";
 
 import axios from "axios";
+import { BACKEND_BASE } from '../config';
 
 function Loginpage() {
     const [email, setEmail] = useState("");
@@ -14,7 +15,7 @@ function Loginpage() {
     const handleLogin = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post("http://localhost:5000/users/login", {
+            const res = await axios.post(`${BACKEND_BASE}users/login`, {
                 email,
                 password
             });
