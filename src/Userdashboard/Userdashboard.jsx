@@ -5,7 +5,7 @@ import Myshows from '../Myshows/Myshows';
 import Account from '../Account/Account';
 import Welcome from '../Welcome/Welcome';
 import Changepassword from '../Changepassword/Changepassword';
-import './Userdashboard.css';
+import './userdashboard.css';
 import { IoMdMenu } from "react-icons/io";
 import backgroundvideo from '../assets/backgroundvideo.webm';
 import { BACKEND_BASE } from '../config';
